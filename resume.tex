@@ -1,0 +1,332 @@
+% !TEX program = xelatex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Two Column One Page Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (24/1/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro (The CV Inn)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
+
+\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Document margins
+
+\usepackage{marvosym} % Required for symbols in the colored box
+\usepackage{ifsym} % Required for symbols in the colored box
+
+\usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
+
+% Fonts and tweaks for XeLaTeX
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont[Mapping=tex-text]{Trebuchet MS} % Main document font
+%\setsansfont[Mapping=tex-text]{GillSans} % Font for your name at the top
+%\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+% Colors for links, text and headings
+\usepackage{hyperref}
+\definecolor{linkcolor}{HTML}{506266} % Blue-gray color for links
+\definecolor{shade}{HTML}{F5DD9D} % Peach color for the contact information box
+\definecolor{text1}{HTML}{2b2b2b} % Main document font color, off-black
+\definecolor{headings}{HTML}{701112} % Dark red color for headings
+% Other color palettes: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
+
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolor, linkcolor=linkcolor} % Set up links and colors
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example footer:
+%\rfoot{\color{headings} {\sffamily Last update: \today}. Typeset with Xe\LaTeX}
+
+\renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
+
+\usepackage{titlesec} % Allows creating custom \section's
+
+% Format of the section titles
+\titleformat{\section}{\color{headings}
+\scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
+
+\titlespacing{\section}{0pt}{0pt}{5pt} % Spacing around titles
+
+\begin{document}
+
+\color{text1} % Sets the default text color for the whole document to the color defined as 'text1'
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Ashwin Sekar}\\
+
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
+\vspace{15pt} % Trick for alignment
+	
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+\begin{tabular}{rl} % Start a table with two columns, one for dates and one for qualifications
+
+%------------------------------------------------
+% EDUCATION 1
+%------------------------------------------------
+
+2014 --- 2018 & \textbf{Bachelors in Computer Science} \\
+& {\small \textbf{Minors in Robotics and Engineering Studies}} \\
+& \textit{Carnegie Mellon University} \\
+%----------------------------------------------------------------------------------------
+\end{tabular}\\[10pt]
+
+%
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience} 
+
+%------------------------------------------------
+% WORK EXPERIENCE 1
+%------------------------------------------------
+
+{\raggedleft\color{headings}\textsc{Aug 2018}\par}
+{\raggedright\large Software Engineer
+\\
+\textbf{Two Sigma}\\[5pt]}
+
+\normalsize
+\begin{itemize}
+  \item Developed features for the low latency execution trading system for the agency and wholesale market making trading desks.
+  \item Productionalized trading tactics and set up the execution trading system for the principal eligble algorithm trading desk.
+  \item Developed a priority based order splitting model. 
+  \item Productionalized a tensorflow model for order classification.
+  \item Created and productionalized a new trading tactic for laddering orders to capture favorable market momentum.
+  \item Developed a simulator optimized for the principal eligble trading tactics, to measure expected historical performance of new tactics.
+  \item Optimized system startup and critical path to allow automated integration testing.
+\end{itemize}
+
+%------------------------------------------------
+% WORK EXPERIENCE 1
+%------------------------------------------------
+
+{\raggedleft\color{headings}\textsc{May 2017 --- Aug 2017}\par}
+{\raggedright\large Software Engineering Intern
+\\
+\textbf{Two Sigma}\\[5pt]}
+
+\normalsize
+\begin{itemize}
+  \item Deployed a multi class SVM to classify client orders across various execution algorithms with the help of historical simulated tactic performance.
+\end{itemize}
+
+%------------------------------------------------
+% WORK EXPERIENCE 2
+%------------------------------------------------
+
+{\raggedleft\color{headings}\textsc{May 2016 --- Aug 2016}\par}
+
+{\raggedright\large Software Engineering Intern
+\\
+\textbf{Google}\\[5pt]}
+
+\normalsize
+  \begin{itemize}
+    \item Created a data pipeline for an internal ads email service to disseminate key metrics to advertisers.
+  \end{itemize}
+
+%------------------------------------------------
+% WORK EXPERIENCE 2
+%------------------------------------------------
+
+{\raggedleft\color{headings}\textsc{Aug 2015 --- May 2018}\par}
+{\raggedright\large Teaching Assistant
+\\
+\textbf{Carnegie Mellon University}\\
+[5pt]}
+
+%\normalsize
+%15--418 Parallel Computer Architecture and Programming \\
+%15--210 Parallel and Sequential Data Structures and Algorithms \\
+%15--150 Functional Programming
+
+%------------------------------------------------
+% WORK EXPERIENCE 3
+%------------------------------------------------
+
+{\raggedleft\color{headings}\textsc{May 2015 --- Aug 2015}\par}
+
+{\raggedright\large Software Engineering Intern\\
+\textbf{Financial Industry Regulatory Authority}\\[5pt]}
+
+
+
+
+\end{minipage} % End the left-hand side of the page
+\hfill
+\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
+\vspace{15pt} % Trick for alignment
+
+%----------------------------------------------------------------------------------------
+%	COLORED BOX
+%----------------------------------------------------------------------------------------
+
+\colorbox{shade}{\textcolor{text1}{\begin{tabular}{cp{7cm}}
+      \raisebox{-2pt}{\textifsymbol{18}} & 24871 Falling Brook Circle, Aldie VA 20105 \\ % Address
+      \raisebox{0pt}{\Mobilefone} & 301--693--0977 \\ % Phone number
+      \raisebox{0pt}{\Letter} & \href{mailto:ashwin@ashwinsekar.com}{ashwin@ashwinsekar.com} \\ % Email
+      \raisebox{0pt}{\Keyboard} & \href{https://github.com/AshwinSekar}{github.com/AshwinSekar} \\ % Github
+    \end{tabular}
+  }
+}\\[10pt]
+
+
+
+%----------------------------------------------------------------------------------------
+%	Personal Projects
+%----------------------------------------------------------------------------------------
+
+\section{Personal Projects}
+
+{\raggedright\large \href{http://rzhao.io/FlowOnTheGo/}{Flow on the Go} \\ {\small http://rzhao.io/FlowOnTheGo} \\
+{\small \textit{Dense optical flow computation optimized for mobile GPUs}}\\[5pt]}
+
+\normalsize
+  \begin{itemize}
+    \item Implemented and parallelized a dense inverse search based algorithm based on the Inverse Lucas Kanade approach.
+    \item Achieved 25fps on a mobile gpu, and 50fps on a desktop gpu for 4K resolution
+  \end{itemize}
+
+
+{\raggedright\large C0 Compiler \\
+  {\small\textit{Compiler for subset of C language written in Haskell}}\\[5pt]}
+
+\normalsize
+  \begin{itemize}
+    \item 
+      Performed full lexing, parsing, AST, intermediate representations, SSA translation, and assembly translation.
+    \item
+      Implemented multiple optimization techniques including constant propagation and folding, strength reduction,
+      dead code removal, function inlining, loop unrolling, loop hoisting, and SIMD optimization.
+  \end{itemize}
+
+
+
+
+{\raggedright\large March Madness 2015 bracket solver}
+
+\normalsize
+  \begin{itemize}
+    \item
+      Implemented a boosted decision tree, support vector machine
+      and Google’s pagerank algorithm in R and Microsoft Azure
+      ML to predict the 2015 march madness bracket.
+    \item
+      Successfully predicted the final four.
+  \end{itemize}
+
+  {\raggedright\large \href{https://github.com/AshwinSekar/AdventOfCode}{Advent of Code} \\ {\small https://github.com/AshwinSekar/AdventOfCode/} \\
+  {\small\textit{Solving a selection of daily code challenges in Haskell}}\\[5pt]}
+
+
+%----------------------------------------------------------------------------------------
+%	Technical Skills
+%----------------------------------------------------------------------------------------
+
+\section{Technical Skills} 
+
+\begin{tabular}{rl}
+Proficient in
+& \textsc{Java}, C, \textsc{SML}, Haskell, \LaTeX, Linux\\
+& Git, Groovy \\
+
+Familiar with  
+& \textsc{Rust}, C++, \textsc{Python}, Scala, x64 Assembly \\
+& \\
+
+%Certifications & Securities Trader Representative (Series 57) \\
+%& General Securities Representative (Series 7) \\
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Awards} 
+
+\begin{tabular}{rl}
+2012	 & \textbf{DoD Digital Forensics Challenge (Dc3)}\\
+& \textit{International high school team winner 2012} \\
+2014--2018 & \textbf{Dean's list}
+
+%------------------------------------------------
+
+\end{tabular}\\[10pt]
+
+
+%----------------------------------------------------------------------------------------
+%	Relevant Coursework
+%----------------------------------------------------------------------------------------
+
+%\section{Relevant Coursework} 
+
+%\begin{tabular}{rl}
+%\textsc{15-122}
+%& Principles of Imperative Computation \\
+%\textsc{15-150}
+%& Principles of Functional Programming \\
+%\textsc{15-112}
+%& Fundamentals of Programming \\ & \qquad\qquad\qquad and Computer Science \\
+%\textsc{18-100}
+%& Introduction to Electrical and \\ & \qquad\qquad\qquad Computer Engineering \\
+%\textsc{80-315}
+%& Modal Logic \\
+%\textsc{21-241}
+%& Matrices and Linear Transformations \\
+%\textsc{21-259}
+%& Calculus in Three Dimensions \\
+%\textsc{21-127}
+%& Concepts of Mathematics
+%\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	Relevant Coursework
+%----------------------------------------------------------------------------------------
+
+%\section{Extracurriculars}
+
+%Member of Robotics Club. Currently working on Colony: A project to create
+%3D printed swarm robots controlled by ATTiny25 \\
+
+%Varsity swimmer in high school. \\
+
+
+%----------------------------------------------------------------------------------------
+
+
+\end{minipage} % End right-hand side of the page
+}
+
+\end{document}  
